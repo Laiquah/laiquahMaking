@@ -38,39 +38,35 @@
       <div class="row">
     <div class="col-3">
       <div class="card">
-        <img src="https://i.ibb.co/cwtzg4V/bmw-ix-m60-onepager-gallery-impressions-thumbnail-02.jpg" class="card-img-top" alt="BMW iX M60">
-        <div class="card-body">
-          <h5 class="card-title">BMW iX M60</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
+  <div class="card-details">
+    <p class="text-title">Card title</p>
+  </div>
+  <button class="card-button">BMW iX M60</button>
+</div>
     </div>
     <div class="col-3">
       <div class="card">
-        <img src="https://i.ibb.co/Jd25tqr/2024-bmw-i7-m70-119-643d69e564b2a.jpg" class="card-img-top" alt="BMW i7">
-        <div class="card-body">
-          <h5 class="card-title">BMW i7</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
+  <div class="card-details">
+    <p class="text-title">Card title</p>
+  </div>
+  <button class="card-button">BMW i7</button>
+</div>
     </div>
     <div class="col-3">
       <div class="card">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
+  <div class="card-details">
+    <p class="text-title">Card title</p>
+  </div>
+  <button class="card-button">BMW iX3</button>
+</div>
     </div>
     <div class="col-3">
       <div class="card">
-        <img src="" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
+  <div class="card-details">
+    <p class="text-title">Card title</p>
+  </div>
+  <button class="card-button">More info</button>
+</div>
     </div>
   </div>
     </center>
@@ -139,11 +135,65 @@ a{
   padding-top: 5%;
 }
 
-.card-img-top{
-  width: 40% !important;
+.card {
+ width: 70%;
+ height: 70vh;
+ border-radius: 20px;
+ background: #f5f5f5;
+ position: relative;
+ padding: 1.8rem;
+ border: 2px solid #c3c6ce;
+ transition: 0.5s ease-out;
+ overflow: visible;
 }
 
-.card{
-  width: 40% !important;
+.card-details {
+ color: black;
+ height: 100%;
+ gap: .5em;
+ display: grid;
+ place-content: center;
+}
+
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #030609;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+.text-body {
+ color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+ border-color: #030609;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+
+.row{
+  --bs-gutter-x: 0rem !important;
+  padding-top: 4%;
 }
 </style>
