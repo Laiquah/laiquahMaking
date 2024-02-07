@@ -39,7 +39,7 @@
     <div class="col-3">
       <div class="card">
   <div class="card-details">
-    <p class="text-title">Card title</p>
+    <img src="https://i.ibb.co/1R8m6HJ/image-1639072627192.jpg" alt="" loading="lazy" class="img">
   </div>
   <button class="card-button">BMW iX M60</button>
 </div>
@@ -47,7 +47,7 @@
     <div class="col-3">
       <div class="card">
   <div class="card-details">
-    <p class="text-title">Card title</p>
+    <img src="https://i.ibb.co/sqMYcsq/cosySec.png" alt="" loading="lazy" class="img3">
   </div>
   <button class="card-button">BMW i7</button>
 </div>
@@ -55,7 +55,7 @@
     <div class="col-3">
       <div class="card">
   <div class="card-details">
-    <p class="text-title">Card title</p>
+    <img src="https://i.ibb.co/4tsCCLS/4-175-f.webp" alt="" loading="lazy" class="img">
   </div>
   <button class="card-button">BMW iX3</button>
 </div>
@@ -63,24 +63,64 @@
     <div class="col-3">
       <div class="card">
   <div class="card-details">
-    <p class="text-title">Card title</p>
+    <img src="https://i.ibb.co/vLZ6dWQ/image-1674190647214.jpg" alt="" loading="lazy" class="img">
   </div>
-  <button class="card-button">More info</button>
+  <button class="card-button">BMW X6</button>
 </div>
     </div>
   </div>
     </center>
   </section>
+  <section>
+    <center>
+      <div class="divBtn2">
+        <router-link to="/about" class="divBtn">CHECKOUT OUR ABOUT PAGE</router-link>
+      </div>
+    </center>
+  </section>
+  <div class="footer">
+    Copyright &copy; {{ newYear }}, All Right Reserved
+</div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      newYear: new Date().getUTCFullYear(),
+    };
+  },
 }
 </script>
 
 <style>
+.footer{
+  background-color: #030609;
+  color: white;
+  font-size: 154%;
+    font-weight: 900;
+}
 .navbar {
   background-color: #030609;
+}
+
+.divBtn2{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.divBtn {
+  border: 5px solid black;
+  background-color: black;
+  width: 15% !important;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.divBtn:hover{
+  background-color:  rgb(134, 134, 134);
+  color: black !important;
+  border: 5px solid  rgb(134, 134, 134);
 }
 
 a{
@@ -136,13 +176,13 @@ a{
 }
 
 .card {
- width: 70%;
+ width: 95%;
  height: 70vh;
  border-radius: 20px;
  background: #f5f5f5;
  position: relative;
  padding: 1.8rem;
- border: 2px solid #c3c6ce;
+ border: 2px solid #c3c6ce !important;
  transition: 0.5s ease-out;
  overflow: visible;
 }
@@ -195,5 +235,13 @@ a{
 .row{
   --bs-gutter-x: 0rem !important;
   padding-top: 4%;
+}
+
+.img{
+  width: 95%
+}
+
+.img3{
+  width: 89%
 }
 </style>
